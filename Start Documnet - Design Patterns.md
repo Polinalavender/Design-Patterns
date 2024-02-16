@@ -1,10 +1,10 @@
-## **Start Documnet - Design Patterns**
+## **Start Document - Design Patterns**
 
 
 
 ##### **Description** 
 
-Camera has different mode of shootings. The camera should support at least six shooting modes: Auto, Portrait, Standard, Hybrid, Manual, and Timer. Users can effortlessly switch between modes by pressing a designated button on the camera interface.
+The camera has different modes of shooting. The camera should support at least six shooting modes: Auto, Portrait, Standard, Hybrid, Manual, and Timer. Users can effortlessly switch between modes by pressing a designated button on the camera interface.
 
 Auto Mode: Automatically adjusts camera settings for optimal photo capture.
 
@@ -35,7 +35,7 @@ The camera interface includes a circle button that users can press to switch bet
    - Switching between modes changes the state of the camera, affecting its behavior.
 6. **Decorator:**
    - Add optional features to each shooting mode dynamically.
-   - A`BlurredBackgroundDecorator` can be applied to the `PortraitMode` to enhance its features.
+   - A `BlurredBackgroundDecorator` can be applied to the `PortraitMode` to enhance its features.
 
 
 
@@ -59,11 +59,18 @@ The camera system follows a MVVM (Model-View-ViewModel) architecture
 
 **MOSCOW analysis:**
 
-| MUST have | SHOULD have | COULD have | WON'T have |
-| --------- | ----------- | ---------- | ---------- |
-|           |             |            |            |
-|           |             |            |            |
-|           |             |            |            |
+| Feature            | Must Have                                                      | Should Have                                                     | Could Have                                                      | Won't Have                                                      |
+|--------------------|----------------------------------------------------------------|------------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+| Shooting Modes     | Auto, Portrait, Standard, Hybrid, Manual, Timer                  |                                                                  |                                                                 |                                                                 |
+| Mode Switching     | Effortless switching between modes via designated button        | Visually represented modes on UI for easy identification        |                                                                 |                                                                 |
+| Auto Mode          | Automatically adjusts camera settings for optimal capture        |                                                                  |                                                                 |                                                                 |
+| Portrait Mode      | Enhances settings for capturing portraits with a blurred background | ABlurredBackgroundDecorator for enhanced feature               |                                                                 |                                                                 |
+| Standard Mode      | Default mode with standard camera settings                       |                                                                  |                                                                 |                                                                 |
+| Hybrid Mode        | Combines features of different modes for versatile shooting     |                                                                  |                                                                 |                                                                 |
+| Manual Mode| Allows manual adjustment of settings like exposure, focus, and aperture |                                                              |                                                                 |                                                                 |
+| Timer Mode         | Enables setting a timer for delayed photo capture               |                                                                  |                                                                 |                                                                 |
+
+
 
 **Conclusion:**
 
