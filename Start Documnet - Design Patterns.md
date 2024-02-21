@@ -31,13 +31,13 @@ The camera interface includes a circle button that users can press to switch bet
 1. **Factory Method:** (for creating instances of different shooting modes)
 
    - Define an interface `ShootingMode` for different shooting modes.
-   - Create classes for each shooting mode  `AutoMode`, `PortraitMode`, ans etc. 
+   - Create classes for each shooting mode  `AutoMode`, `PortraitMode`, `StandardMode`, `HydridMode`, `ManualMode`, `TimerMode`. 
    - `createShootingMode()`) in the camera class responsible for creating instances of shooting mode classes based on the selected shooting mode.
    - When the user presses the button to switch between modes, the factory method creates an instance of the selected shooting mode, allowing the camera to adapt its behavior accordingly.
 
 2. **Builder:** (for constructing a complex object step by step)
 
-   - Create a `CameraModeBuilder` that constructs a `CameraMode` with various settings based on the selected shooting mode.
+   - `CameraModeBuilder` constructs a `CameraMode` with various settings based on the selected shooting mode.
    - Methods -  `setExposure()`, `setFocus()`.  Allow configuring specific settings for a shooting mode.
    - When creating a new shooting mode, the `CameraModeBuilder` is used to set specific settings, and then the constructed `CameraMode` is assigned to the camera.
 
@@ -46,17 +46,14 @@ The camera interface includes a circle button that users can press to switch bet
    - The camera interface that changes its state: shooting modes or timer statuses
    - `ModeObserver` that need to be notified when the shooting mode changes or when the timer is started, stopped, or updated.
    - `registerObserver()`, `removeObserver()`, `notifyObservers()`): Manage the list of observers and notify them of changes.
-   - When the user presses the button to switch between modes or manipulates the timer, the camera notifies registered observers, updating UI components accordingly.
+   - When the user presses the button to switch between modes or manipulates the timer, the camera notifies registered observers, updating UI components.
 
 4. **Strategy Pattern:**
 
-   -  Represents the strategy for adjusting camera settings.
-
    - `AutoSettingsStrategy`, `ManualSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
    - `Camera` -  Contains a reference to the current strategy and delegates the task of adjusting settings to the selected strategy.
-   - When the shooting mode changes, the camera switches to the corresponding strategy, allowing flexible adjustment of camera settings based on the selected mode.
+   - When the shooting mode changes, the camera switches to the corresponding strategy.
 
-   
 
 ##### **Architecture:**
 
@@ -69,11 +66,9 @@ The camera system follows a MVVM (Model-View-ViewModel) architecture
  \- Handles the communication between the view and the model, ensuring seamless mode switching.
 
 
-
 **Class Diagram:**
 
 <img width="801" alt="Class diagram" src="https://github.com/Polinalavender/Design-Patterns/assets/91316935/fdbea623-6aba-4a4e-a222-0b0ed52752a4">
-
 
 
 
