@@ -41,14 +41,14 @@ The camera interface includes a circle button that users can press to switch bet
    - Methods -  `setExposure()`, `setFocus()`.  Allow configuring specific settings for a shooting mode.
    - When creating a new shooting mode, the `CameraModeBuilder` is used to set specific settings, and then the constructed `CameraMode` is assigned to the camera.
 
-3. **Observer Pattern:** (for separating the camera from its observers. Ensure that the subject - camera notifies observers efficiently)
+3. **Observer:** (for separating the camera from its observers. Ensure that the subject - camera notifies observers efficiently)
 
    - The camera interface that changes its state: shooting modes or timer statuses
    - `ModeObserver` that need to be notified when the shooting mode changes or when the timer is started, stopped, or updated.
    - `registerObserver()`, `removeObserver()`, `notifyObservers()`): Manage the list of observers and notify them of changes.
    - When the user presses the button to switch between modes or manipulates the timer, the camera notifies registered observers, updating UI components.
 
-4. **Strategy Pattern:**
+4. **Strategy:**
 
    - `AutoSettingsStrategy`, `ManualSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
    - `Camera` -  Contains a reference to the current strategy and delegates the task of adjusting settings to the selected strategy.
