@@ -44,7 +44,7 @@ The camera interface includes a circle button that users can press to switch bet
 3. **Strategy:**
 
 - In the interface ShootingMode the method capturePhoto() is declared.
--  `AutoSettingsStrategy`, `ManualSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
+-  `AutoSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
 - `Camera` -  Contains a reference to the current strategy and delegates the task of adjusting settings to the selected strategy.
 - ShootingMode as a strategy. The capturePhoto() method in the Camera class delegates the photo capture task to the current strategy.
 
