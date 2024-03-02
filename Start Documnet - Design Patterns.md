@@ -4,19 +4,18 @@
 
 ##### **Description** 
 
-Camera has different mode of shootings. The camera should support at least six shooting modes: Auto, Portrait, Standard, Hybrid, Manual, and Timer. Users can effortlessly switch between modes by pressing a designated button on the camera interface.
+The Camera simulator has different mode of shootings. The camera should support at least 5 shooting modes: Auto, Portrait, Standard, Hybrid, and Timer. Users can effortlessly switch between modes by pressing a button on the camera interface and there will be made a photo with different image size. Output (photo) is returned in text and is differed from the selected mode.
+For instance: "photo of Landscape, 1280 x 720 px" made in Standard mode or "portrait photo, 1080 x 1350 px" made in Portrait mode.
 
-Auto Mode: Automatically adjusts camera settings for optimal photo capture.
+Auto Mode: Automatically adjusts camera settings for optimal photo capture and has standard image size of 1080 x 1920 px.
 
-Portrait Mode:  Enhances settings for capturing portrait shots with a blurred background.
+Portrait Mode:  Enhances settings for capturing portrait shots with a blurred background and has image size of 1080 x 1350 px.
 
-Standard Mode: Default mode with standard camera settings.
+Standard Mode: Default mode with standard camera settings and has standard image size of 1280 x 720 px.
 
-Hybrid Mode: Combines features of different modes for versatile shooting conditions.
+Hybrid Mode: Combines features of different modes for shooting videos in HD format with resolution of 1080p HD at 60fps.
 
-Manual Mode: Allows users to manually adjust settings like exposure, focus, and aperture.
-
-Timer Mode: Enables users to set a timer for delayed photo capture.
+Timer Mode: Enables users to set a 5 seconds timer for delayed photo capture, has the same image size as Auto mode. 
 
 The camera interface includes a circle button that users can press to switch between shooting modes and timer (Timermode). Each mode is visually represented on the UI for easy identification.
 
@@ -28,31 +27,26 @@ The camera interface includes a circle button that users can press to switch bet
 
 ##### **Design Patterns:**
 
-1. **Factory Method:** (for creating instances of different shooting modes)
+1. **State Method:** (for creating instances of different shooting modes)
 
-   - Define an interface `ShootingMode` for different shooting modes.
-   - Create classes for each shooting mode  `AutoMode`, `PortraitMode`, `StandardMode`, `HydridMode`, `ManualMode`, `TimerMode`. 
-   - `createShootingMode()`) in the camera class responsible for creating instances of shooting mode classes based on the selected shooting mode.
-   - When the user presses the button to switch between modes, the factory method creates an instance of the selected shooting mode, allowing the camera to adapt its behavior accordingly.
+- An interface `ShootingMode`, that declares methods corresponding to different actions in each shooting mode (takePhoto, getImageSize).
+- Create classes for each shooting mode  `AutoMode`, `PortraitMode`, `StandardMode`, `HydridMode`, `TimerMode`. 
+- When the user presses the button to switch between modes. 
 
-2. **Builder:** (for constructing a complex object step by step)
+2. **Builder:** (for constructing photo object step by step)
 
-   - `CameraModeBuilder` constructs a `CameraMode` with various settings based on the selected shooting mode.
-   - Methods -  `setExposure()`, `setFocus()`.  Allow configuring specific settings for a shooting mode.
-   - When creating a new shooting mode, the `CameraModeBuilder` is used to set specific settings, and then the constructed `CameraMode` is assigned to the camera.
+- Each shooting mode can have its own PhotoBuilder responsible for constructing the photo with the specific characteristics.
+- A photo class represents the final output that you want to create. It can have attributes like description and image_size.
+- The PhotoBuilder interface with methods for building different attributes of the Photo (buildDescription() and buildImageSize()). Implementing PhotoBuilder for each shooting mode (AutoModePhotoBuilder, PortraitModePhotoBuilder)
+- PhotoDirector class is responsible for coordinating the construction process. It takes a PhotoBuilder as a parameter and calls its methods to construct the Photo.
 
-3. **Observer:** (for separating the camera from its observers. Ensure that the subject - camera notifies observers efficiently)
 
-   - The camera interface that changes its state: shooting modes or timer statuses
-   - `ModeObserver` that need to be notified when the shooting mode changes or when the timer is started, stopped, or updated.
-   - `registerObserver()`, `removeObserver()`, `notifyObservers()`): Manage the list of observers and notify them of changes.
-   - When the user presses the button to switch between modes or manipulates the timer, the camera notifies registered observers, updating UI components.
+3. **Strategy:**
 
-4. **Strategy:**
-
-   - `AutoSettingsStrategy`, `ManualSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
-   - `Camera` -  Contains a reference to the current strategy and delegates the task of adjusting settings to the selected strategy.
-   - When the shooting mode changes, the camera switches to the corresponding strategy.
+- In the interface ShootingMode the method capturePhoto() is declared.
+-  `AutoSettingsStrategy`, `ManualSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
+- `Camera` -  Contains a reference to the current strategy and delegates the task of adjusting settings to the selected strategy.
+- ShootingMode as a strategy. The capturePhoto() method in the Camera class delegates the photo capture task to the current strategy.
 
 
 ##### **Architecture:**
@@ -68,7 +62,7 @@ The camera system follows a MVVM (Model-View-ViewModel) architecture
 
 **Class Diagram:**
 
-<img width="804" alt="class diagram" src="https://github.com/Polinalavender/Design-Patterns/assets/91316935/20adac20-6758-4782-b0c8-ce53349b3b5a">
+
 
 
 
