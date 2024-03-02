@@ -25,6 +25,7 @@ The camera interface includes a circle button that users can press to switch bet
 
 
 
+
 ##### **Design Patterns:**
 
 1. **State Method:** (for creating instances of different shooting modes)
@@ -62,6 +63,8 @@ The camera system follows a MVVM (Model-View-ViewModel) architecture
 
 **Class Diagram:**
 
+<img width="821" alt="Class diagram" src="https://github.com/Polinalavender/Design-Patterns/assets/91316935/ccddea6c-e181-4822-8e0e-c9ef354482e3">
+
 
 
 
@@ -72,6 +75,7 @@ The camera system follows a MVVM (Model-View-ViewModel) architecture
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Switch Between Modes<br />** The ability for users to switch between shooting modes by pressing a button on the camera interface. | **UI Representation** <br />Each mode should be visually represented on the UI. | **Additional Shooting Modes** <br />The possibility of adding more shooting modes manually. | **Connection camara to different devices**<br />Possibility  to connect camera to the phone to trasfer photos |
 | The output is photo, given in text (String)                  |                                                              |                                                              |                                                              |
+
 
 
 **Information about developers:**
