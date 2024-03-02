@@ -70,11 +70,8 @@ The camera system follows a MVVM (Model-View-ViewModel) architecture
 
 | MUST have                                                    | SHOULD have                                                  | COULD have                                                   | WON'T have                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Switch Between Modes<br />** The ability for users to switch between shooting modes by pressing a button on the camera interface. | | **Connection camera to different devices**<br />Possibility  to connect camera to the phone to trasfer photos | 
-| **Additional Shooting Modes** <br />The possibility of adding more shooting modes manually. |                                                              |
-| **UI Representation** <br />Each mode should be visually represented on the UI. |                                                              |                                                              |
-|                                                              |                                                              |                                                              |
-
+| **Switch Between Modes<br />** The ability for users to switch between shooting modes by pressing a button on the camera interface. | **UI Representation** <br />Each mode should be visually represented on the UI. | **Additional Shooting Modes** <br />The possibility of adding more shooting modes manually. | **Connection camara to different devices**<br />Possibility  to connect camera to the phone to trasfer photos |
+| The output is photo, given in text (String)                  |                                                              |                                                              |                                                              |
 
 
 **Information about developers:**
