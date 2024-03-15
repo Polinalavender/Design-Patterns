@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\mainscreenform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\mainscreenform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\mainscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\portraitmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\portraitmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\automode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\automode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|c:\\users\\toets 1\\desktop\\camera simulator\\camera simulator\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD238E7-015F-4040-BA98-E90FCE6B4CDA}|Camera Simulator\\Camera Simulator.csproj|solutionrelative:camera simulator\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\Form1.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\Form1.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\Form1.cs [Design]",
+              "RelativeToolTip": "Camera Simulator\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:49:51.966Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainScreenForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\MainScreenForm.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\MainScreenForm.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\MainScreenForm.cs [Design]",
+              "RelativeToolTip": "Camera Simulator\\MainScreenForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:46:06.619Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainScreenForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\MainScreenForm.Designer.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\MainScreenForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\MainScreenForm.Designer.cs",
+              "RelativeToolTip": "Camera Simulator\\MainScreenForm.Designer.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAnwIwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:45:18.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PortraitMode.cs",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\PortraitMode.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\PortraitMode.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\PortraitMode.cs",
+              "RelativeToolTip": "Camera Simulator\\PortraitMode.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:39:30.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainScreenForm.cs",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\MainScreenForm.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\MainScreenForm.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\MainScreenForm.cs",
+              "RelativeToolTip": "Camera Simulator\\MainScreenForm.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAUwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:37:23.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\Camera.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\Camera.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\Camera.cs",
+              "RelativeToolTip": "Camera Simulator\\Camera.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:33:58.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutoMode.cs",
+              "DocumentMoniker": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\AutoMode.cs",
+              "RelativeDocumentMoniker": "Camera Simulator\\AutoMode.cs",
+              "ToolTip": "C:\\Users\\Toets 1\\Desktop\\Camera Simulator\\Camera Simulator\\AutoMode.cs",
+              "RelativeToolTip": "Camera Simulator\\AutoMode.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:39:21.365Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
