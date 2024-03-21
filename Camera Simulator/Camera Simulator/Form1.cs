@@ -18,5 +18,10 @@ namespace Camera_Simulator
             // Close the application when the main screen is closed
             this.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Size = new System.Drawing.Size(1000, 600);
+        }
     }
 }

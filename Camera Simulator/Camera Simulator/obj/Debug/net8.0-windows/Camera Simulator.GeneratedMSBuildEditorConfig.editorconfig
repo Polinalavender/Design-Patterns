@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Camera_Simulator
-build_property.ProjectDir = C:\Users\Toets 1\Desktop\Camera Simulator\Camera Simulator\
+build_property.ProjectDir = C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

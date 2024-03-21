@@ -1,32 +1,61 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Camera_Simulator
 {
     public class Camera
     {
         private ShotingMode currentMode;
+
         public Camera()
         {
             SetMode(new AutoMode()); // Default mode 
         }
+
         public void SetMode(ShotingMode mode)
         {
             currentMode = mode;
         }
-        public void PressButton(RichTextBox richTextBox)
+
+        public Image PressButton(RichTextBox richTextBox, string modeDescription)
         {
-            currentMode.takePhoto(richTextBox);
-            richTextBox.AppendText($"Output photo: {GetOutputDescription()}\n");
+
+            string photoFilePath = GetPhotoFilePath();
+            PhotoBuilder photoBuilder = new ConcretePhotoBuilder();
+            photoBuilder.BuildImageSize(currentMode);
+            photoBuilder.BuildImage(photoFilePath);
+
+            Photo photo = photoBuilder.GetPhoto();
+
+            // Display information 
+            richTextBox.AppendText($"Output photo: {photo.Description}, photo of {GetCurrentModeName()}, {GetCurrentModeImageSize()}\n");
+
+            return photo.Image;
         }
 
-        public string GetOutputDescription()
+
+        private string GetPhotoFilePath()
         {
-            return $"photo of {GetCurrentModeName()}, {GetCurrentModeImageSize()}";
+            if (currentMode is PortraitMode)
+            {
+                return "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Portrait.JPG"; // Replace with the actual file path of the portrait image
+            }
+            else if (currentMode is AutoMode)
+            {
+                return "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Amsterdam-autoMode.jpg"; // Replace with the actual file path of the auto image
+            }
+            else if (currentMode is StandardMode)
+            {
+                return "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Standard.jpg"; // Replace with the actual file path of the auto image
+            }
+            else
+            {
+                return "";
+            }
         }
+
 
         private string GetCurrentModeName()
         {

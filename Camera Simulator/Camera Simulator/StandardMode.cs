@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Camera_Simulator
 {
-    internal class StandardMode
+    public class StandardMode : ShotingMode
     {
+        public string getImageSize()
+        {
+            return "1280 x 720 px";
+        }
+
+        public void takePhoto(RichTextBox richTextBox)
+        {
+            richTextBox.Text = "Taking photo in Standard mode.";
+        }
     }
 }

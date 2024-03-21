@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Camera_Simulator
 {
-    internal class Photo
+    public class Photo
     {
+        public string Description { get; set; }
+        public string ImageSize { get; set; }
+        public Image Image { get; set; }
     }
+
 }

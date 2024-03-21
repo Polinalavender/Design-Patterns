@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Camera_Simulator
 {
-    internal class HybridMode
+    public class HybridMode : ShotingMode
     {
+        public string getImageSize()
+        {
+            return "1080p HD at 60fps";
+        }
+
+        public void takePhoto(RichTextBox richTextBox)
+        {
+            richTextBox.Text = "Video HD in Hybrid mode.";
+        }
     }
 }

@@ -16,3 +16,27 @@ C:\Users\Toets 1\Desktop\Camera Simulator\Camera Simulator\obj\Debug\net8.0-wind
 C:\Users\Toets 1\Desktop\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.genruntimeconfig.cache
 C:\Users\Toets 1\Desktop\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\ref\Camera Simulator.dll
 C:\Users\Toets 1\Desktop\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.MainScreenForm.resources
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\Camera Simulator.exe
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\Camera Simulator.deps.json
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\Camera Simulator.runtimeconfig.json
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\Camera Simulator.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\Camera Simulator.pdb
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.Form1.resources
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.MainScreenForm.resources
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.Properties.Resources.resources
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.csproj.GenerateResource.cache
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.AssemblyInfoInputs.cache
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.AssemblyInfo.cs
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.csproj.CoreCompileInputs.cache
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.sourcelink.json
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\refint\Camera Simulator.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.pdb
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.genruntimeconfig.cache
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\ref\Camera Simulator.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\Interop.WMPLib.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin\Debug\net8.0-windows\AxInterop.WMPLib.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Interop.WMPLib.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\AxInterop.WMPLib.dll
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.csproj.ResolveComReference.cache

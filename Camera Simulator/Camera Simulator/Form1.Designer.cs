@@ -36,20 +36,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(212, 124);
+            label1.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(245, 195);
             label1.Name = "label1";
-            label1.Size = new Size(376, 35);
+            label1.Size = new Size(481, 44);
             label1.TabIndex = 0;
             label1.Text = "Welcome to Camera Simulator ";
             // 
             // buttonStart
             // 
             buttonStart.BackColor = Color.MediumSlateBlue;
-            buttonStart.Font = new Font("Calibri", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonStart.Location = new Point(323, 228);
+            buttonStart.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonStart.Location = new Point(387, 330);
             buttonStart.Name = "buttonStart";
-            buttonStart.Size = new Size(144, 34);
+            buttonStart.Size = new Size(200, 50);
             buttonStart.TabIndex = 1;
             buttonStart.Text = "Start";
             buttonStart.UseVisualStyleBackColor = false;
@@ -58,7 +58,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(127, 177);
+            label2.Location = new Point(214, 248);
             label2.Name = "label2";
             label2.Size = new Size(540, 25);
             label2.TabIndex = 2;
@@ -69,12 +69,13 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(978, 544);
             Controls.Add(label2);
             Controls.Add(buttonStart);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Camera Simulator ";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

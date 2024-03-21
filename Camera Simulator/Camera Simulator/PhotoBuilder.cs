@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Camera_Simulator
 {
-    internal interface PhotoBuilder
+
+    public interface PhotoBuilder
     {
+        void BuildImageSize(ShotingMode mode);
+        void BuildImage(string photoFilePath);
+        Photo GetPhoto();
     }
 }
