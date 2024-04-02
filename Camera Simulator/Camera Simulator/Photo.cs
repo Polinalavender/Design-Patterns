@@ -12,5 +12,4 @@ namespace Camera_Simulator
         public string ImageSize { get; set; }
         public Image Image { get; set; }
     }
-
 }

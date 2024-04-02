@@ -15,18 +15,17 @@ namespace Camera_Simulator
 
         public void BuildImageSize(ShotingMode mode)
         {
-            // Set the image size of the photo based on the shooting mode
+            // image size based on the shooting mode
             photo.ImageSize = mode.getImageSize();
         }
 
         public void BuildImage(string photoFilePath)
         {
-            // Load the image
+            // Loading the image 
             if (!File.Exists(photoFilePath))
             {
                 throw new FileNotFoundException($"Photo file not found at: {photoFilePath}");
             }
-
             photo.Image = Image.FromFile(photoFilePath);
         }
 
@@ -34,6 +33,5 @@ namespace Camera_Simulator
         {
             return photo;
         }
-
     }
 }

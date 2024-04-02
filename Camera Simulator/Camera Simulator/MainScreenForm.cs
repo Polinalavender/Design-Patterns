@@ -1,17 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using WMPLib;
+
 namespace Camera_Simulator
 {
     public partial class MainScreenForm : Form
     {
         private Camera camera;
+        private List<Image> galleryImages;
 
         public MainScreenForm()
         {
             InitializeComponent();
             camera = new Camera();
+            galleryImages = new List<Image>();
         }
 
         private void autoMode_Click(object sender, EventArgs e)
@@ -38,27 +41,37 @@ namespace Camera_Simulator
             modeLabel.Text = "Hybrid Mode Selected";
         }
 
+        private void timerMode_Click(object sender, EventArgs e)
+        {
+            camera.SetMode(new TimerMode());
+            modeLabel.Text = "Timer Mode Selected";
+        }
+
         private void takeShot_Click(object sender, EventArgs e)
         {
             string modeDescription = modeLabel.Text;
             mainScreen.Clear();
             Image photo = camera.PressButton(mainScreen, modeDescription);
             DisplayPhoto(photo);
-
+            galleryImages.Add(photo); // Add the taken photo to the galleryImages list
         }
 
         private void DisplayPhoto(Image photo)
         {
-            // Clear existing image
             pictureBox1.Image = null;
             pictureBox1.Image = photo;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-
         }
 
         private void MainScreenForm_Load(object sender, EventArgs e)
         {
             this.Size = new System.Drawing.Size(1000, 600);
+        }
+
+        private void galleryButton_Click(object sender, EventArgs e)
+        {
+            GalleryForm galleryScreen = new GalleryForm(galleryImages);
+            galleryScreen.Show();
         }
     }
 }

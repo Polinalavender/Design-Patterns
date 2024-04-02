@@ -12,7 +12,6 @@ namespace Camera_Simulator
         {
             return "1280 x 720 px";
         }
-
         public void takePhoto(RichTextBox richTextBox)
         {
             richTextBox.Text = "Taking photo in Standard mode.";

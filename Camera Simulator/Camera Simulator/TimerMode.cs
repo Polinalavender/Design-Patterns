@@ -1,12 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Camera_Simulator
 {
-    internal class TimerMode
+    public class TimerMode : ShotingMode
     {
+        public string getImageSize()
+        {
+            return "1280 x 720 px";
+        }
+        public void takePhoto(RichTextBox richTextBox)
+        {
+            richTextBox.AppendText("Taking portrait photo in Portrait mode.\n");
+        }
     }
 }
+

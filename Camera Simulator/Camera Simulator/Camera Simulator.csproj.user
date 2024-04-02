@@ -4,7 +4,13 @@
     <Compile Update="AutoSettingStrategy.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Countdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GalleryForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainScreenForm.cs">

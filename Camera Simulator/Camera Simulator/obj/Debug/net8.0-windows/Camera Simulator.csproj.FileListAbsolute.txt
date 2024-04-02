@@ -40,3 +40,5 @@ C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\bin
 C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Interop.WMPLib.dll
 C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\AxInterop.WMPLib.dll
 C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.csproj.ResolveComReference.cache
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.CountdownForm.resources
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.GalleryForm.resources

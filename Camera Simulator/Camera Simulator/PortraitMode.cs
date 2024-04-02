@@ -12,7 +12,6 @@ namespace Camera_Simulator
         {
             return "1080 x 1350 px";
         }
-
         public void takePhoto(RichTextBox richTextBox)
         {
             richTextBox.AppendText("Taking portrait photo in Portrait mode.\n");

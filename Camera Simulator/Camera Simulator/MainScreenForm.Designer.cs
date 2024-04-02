@@ -38,11 +38,12 @@
             modeInfo = new Label();
             button7 = new Button();
             standard = new Button();
-            button2 = new Button();
+            timerMode = new Button();
             pictureBox1 = new PictureBox();
             modeLabel = new TextBox();
             label2 = new Label();
             standardButton = new Button();
+            galleryButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -137,14 +138,15 @@
             standard.Size = new Size(75, 23);
             standard.TabIndex = 17;
             // 
-            // button2
+            // timerMode
             // 
-            button2.Location = new Point(694, 374);
-            button2.Name = "button2";
-            button2.Size = new Size(137, 34);
-            button2.TabIndex = 13;
-            button2.Text = "TimerMode";
-            button2.UseVisualStyleBackColor = true;
+            timerMode.Location = new Point(694, 374);
+            timerMode.Name = "timerMode";
+            timerMode.Size = new Size(137, 34);
+            timerMode.TabIndex = 13;
+            timerMode.Text = "TimerMode";
+            timerMode.UseVisualStyleBackColor = true;
+            timerMode.Click += timerMode_Click;
             // 
             // pictureBox1
             // 
@@ -182,17 +184,28 @@
             standardButton.UseVisualStyleBackColor = true;
             standardButton.Click += standardButton_Click;
             // 
+            // galleryButton
+            // 
+            galleryButton.Location = new Point(738, 451);
+            galleryButton.Name = "galleryButton";
+            galleryButton.Size = new Size(102, 34);
+            galleryButton.TabIndex = 19;
+            galleryButton.Text = "Gallery";
+            galleryButton.UseVisualStyleBackColor = true;
+            galleryButton.Click += galleryButton_Click;
+            // 
             // MainScreenForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(978, 544);
+            Controls.Add(galleryButton);
             Controls.Add(standardButton);
             Controls.Add(label2);
             Controls.Add(modeLabel);
             Controls.Add(pictureBox1);
-            Controls.Add(button2);
+            Controls.Add(timerMode);
             Controls.Add(standard);
             Controls.Add(button7);
             Controls.Add(modeInfo);
@@ -223,10 +236,11 @@
         private Label modeInfo;
         private Button button7;
         private Button standard;
-        private Button button2;
+        private Button timerMode;
         private PictureBox pictureBox1;
         private TextBox modeLabel;
         private Label label2;
         private Button standardButton;
+        private Button galleryButton;
     }
 }
