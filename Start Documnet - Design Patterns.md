@@ -18,6 +18,8 @@ Hybrid Mode: Combines features of different modes for shooting videos in HD form
 Timer Mode: Enables users to set a 5 seconds timer for delayed photo capture, has the same image size as Auto mode. 
 
 The camera interface includes a circle button that users can press to switch between shooting modes and timer (Timermode). Each mode is visually represented on the UI for easy identification.
+The gallery function is available for the camera simulator. User can see all photos that were taken. This function based on Momento design pattern. To open the gallery, user needs to click button "Gallery", to see all photos there are 2 buttons "Next photo" and "Preious photo".
+
 
 - User can press the button to switch between modes
 - Method `pressButton()` contains triggers of the mode switch 
@@ -42,13 +44,12 @@ The camera interface includes a circle button that users can press to switch bet
 - PhotoDirector class is responsible for coordinating the construction process. It takes a PhotoBuilder as a parameter and calls its methods to construct the Photo.
 
 
-3. **Strategy:**
+3. **Momento:**
 
-- In the interface ShootingMode the method capturePhoto() is declared.
--  `AutoSettingsStrategy` -  Implement the `CameraSettingsStrategy` interface, defining specific algorithms for adjusting camera settings.
-- `Camera` -  Contains a reference to the current strategy and delegates the task of adjusting settings to the selected strategy.
-- ShootingMode as a strategy. The capturePhoto() method in the Camera class delegates the photo capture task to the current strategy.
-
+- The GalleryMemento and GalleryTake classes demonstrate the Memento design pattern, which is used to capture and restore the state of an object.
+- The GalleryMemento class is responsible for storing the state of the gallery images. It encapsulates a list of Image objects.
+- The GalleryTake class acts as a caretaker for the gallery state. It manages the history of GalleryMemento instances using a stack.
+- When the gallery needs to save its state (after adding new images), it creates a GalleryMemento object containing the current list of images.
 
 ##### **Architecture:**
 
