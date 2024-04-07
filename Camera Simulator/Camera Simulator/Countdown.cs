@@ -1,5 +1,4 @@
-﻿// CountdownForm.cs
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -26,7 +25,7 @@ namespace Camera_Simulator
             SuspendLayout();
             // 
             // countdownLabel
-            // 
+            //
             countdownLabel.Dock = DockStyle.Fill;
             countdownLabel.Font = new Font("Microsoft Sans Serif", 20F);
             countdownLabel.Location = new Point(0, 0);
@@ -47,7 +46,6 @@ namespace Camera_Simulator
             Text = "Countdown";
             ResumeLayout(false);
         }
-
         private void Timer_Tick(object sender, EventArgs e)
         {
             countdownSeconds--;

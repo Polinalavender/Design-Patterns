@@ -9,13 +9,10 @@ namespace Camera_Simulator
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            // Hide the start screen form
             this.Hide();
 
             MainScreenForm mainScreen = new MainScreenForm();
             mainScreen.ShowDialog();
-
-            // Close the application when the main screen is closed
             this.Close();
         }
 

@@ -60,9 +60,8 @@ namespace Camera_Simulator
             mainScreen.Clear();
             Image photo = camera.PressButton(mainScreen, modeDescription);
             DisplayPhoto(photo);
-            galleryImages.Add(photo); // Add taken photo to the galleryImages list
+            galleryImages.Add(photo); // Add taken photo to the gallery Images list
         }
-
 
         private void videoRecording_Click(object sender, EventArgs e)
         {
@@ -71,13 +70,12 @@ namespace Camera_Simulator
                 MessageBox.Show("Please select Video Mode before recording a video.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            string videoFilePath = "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Hybrid.mp4"; // Replace this with the actual video file path
+            string videoFilePath = "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Hybrid.mp4"; 
 
             VideoPlayerForm videoPlayerForm = new VideoPlayerForm();
             videoPlayerForm.PlayVideo(videoFilePath);
             videoPlayerForm.Show();
         }
-
 
         private void DisplayPhoto(Image photo)
         {
@@ -96,7 +94,7 @@ namespace Camera_Simulator
             GalleryForm galleryScreen = new GalleryForm(galleryImages);
             galleryScreen.Show();
         }
-
+        
         private void offButton_Click(object sender, EventArgs e)
         {
             this.Close();

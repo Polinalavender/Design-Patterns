@@ -14,13 +14,11 @@ namespace Camera_Simulator
 
         public void BuildImageSize(ShootingMode mode)
         {
-            // image size based on the shooting mode
             photo.ImageSize = mode.getImageSize();
         }
 
         public void BuildImage(string photoFilePath)
-        {
-            // Loading the image 
+        { 
             if (!File.Exists(photoFilePath))
             {
                 throw new FileNotFoundException($"Photo file not found at: {photoFilePath}");

@@ -16,12 +16,11 @@ namespace Camera_Simulator
         {
             InitializeComponent();
 
-            this.images = images ?? new List<Image>(); // Ensure images list is not null
+            this.images = images ?? new List<Image>();
             this.mainScreenForm = mainScreenForm;
             currentIndex = 0;
             galleryTake = new GaleryTake();
             galleryTake.AddMomento(new GalleryMemento(images));
-
             DisplayCurrentImage();
         }
 
@@ -33,13 +32,8 @@ namespace Camera_Simulator
             {
                 Image currentImage = images[currentIndex];
 
-                // Set PictureBox properties for image display
-                pictureBox.SizeMode = PictureBoxSizeMode.Zoom; // Ensure image fits within PictureBox without stretching
-
-                // Optionally, set a fixed size for the PictureBox
-                pictureBox.Size = new Size(400, 300); // Adjust to your desired size
-
-                // Display the image
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureBox.Size = new Size(400, 300); 
                 pictureBox.Image = currentImage;
             }
         }

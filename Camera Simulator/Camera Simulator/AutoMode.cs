@@ -12,7 +12,6 @@ namespace Camera_Simulator
         {
             return "1080 x 1920 px";
         }
-
         public void takePhoto(RichTextBox richTextBox)
         {
             richTextBox.Text = "Taking photo in Auto mode.";

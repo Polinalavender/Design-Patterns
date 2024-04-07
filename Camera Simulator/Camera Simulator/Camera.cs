@@ -73,7 +73,6 @@ namespace Camera_Simulator
                 return "";
             }
         }
-
         private string GetCurrentModeName()
         {
             return currentMode.GetType().Name.Replace("Mode", "");
