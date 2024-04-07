@@ -31,13 +31,13 @@ namespace Camera_Simulator
             countdownLabel.Font = new Font("Microsoft Sans Serif", 20F);
             countdownLabel.Location = new Point(0, 0);
             countdownLabel.Name = "countdownLabel";
-            countdownLabel.Size = new Size(361, 179);
+            countdownLabel.Size = new Size(255, 145);
             countdownLabel.TabIndex = 0;
             countdownLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // CountdownForm
             // 
-            ClientSize = new Size(361, 179);
+            ClientSize = new Size(255, 145);
             Controls.Add(countdownLabel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;

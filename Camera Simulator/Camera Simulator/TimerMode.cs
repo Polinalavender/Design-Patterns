@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Camera_Simulator
 {
-    public class TimerMode : ShotingMode
+    public class TimerMode : ShootingMode
     {
         public string getImageSize()
         {

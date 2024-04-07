@@ -8,20 +8,25 @@ namespace Camera_Simulator
 {
     public class Camera
     {
-        private ShotingMode currentMode;
+        private ShootingMode currentMode;
 
-        public Camera()
+        public ShootingMode CurrentMode
         {
-            SetMode(new AutoMode()); // default 
+            get { return currentMode; }
         }
 
-        public void SetMode(ShotingMode mode)
+        public void SetMode(ShootingMode mode)
         {
             currentMode = mode;
         }
 
         public Image PressButton(RichTextBox richTextBox, string modeDescription)
         {
+            if (currentMode == null)
+            {
+                throw new InvalidOperationException("No shooting mode selected.");
+            }
+
             if (currentMode is TimerMode)
             {
                 ShowCountdownForm();
@@ -57,7 +62,7 @@ namespace Camera_Simulator
             }
             else if (currentMode is StandardMode)
             {
-                return "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Standard.jpg"; 
+                return "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Standard.jpg";
             }
             else if (currentMode is TimerMode)
             {
@@ -81,7 +86,6 @@ namespace Camera_Simulator
 
         private Image GetPlaceholderImage()
         {
-
             return Image.FromFile("C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Timer.jpg");
         }
     }

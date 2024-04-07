@@ -16,5 +16,8 @@
     <Compile Update="MainScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="VideoPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

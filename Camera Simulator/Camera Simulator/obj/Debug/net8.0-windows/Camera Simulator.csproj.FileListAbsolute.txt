@@ -42,3 +42,4 @@ C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj
 C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera Simulator.csproj.ResolveComReference.cache
 C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.CountdownForm.resources
 C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.GalleryForm.resources
+C:\Users\Toets 1\Documents\Design-Patterns\Camera Simulator\Camera Simulator\obj\Debug\net8.0-windows\Camera_Simulator.VideoPlayerForm.resources

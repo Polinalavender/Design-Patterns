@@ -7,13 +7,12 @@ namespace Camera_Simulator
     public class ConcretePhotoBuilder : PhotoBuilder
     {
         private Photo photo;
-
         public ConcretePhotoBuilder()
         {
             photo = new Photo();
         }
 
-        public void BuildImageSize(ShotingMode mode)
+        public void BuildImageSize(ShootingMode mode)
         {
             // image size based on the shooting mode
             photo.ImageSize = mode.getImageSize();

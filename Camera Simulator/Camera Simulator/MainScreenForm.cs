@@ -35,10 +35,10 @@ namespace Camera_Simulator
             modeLabel.Text = "Standard Mode Selected";
         }
 
-        private void hydridMode_Click(object sender, EventArgs e)
+        private void videoMode_Click(object sender, EventArgs e)
         {
-            camera.SetMode(new HybridMode());
-            modeLabel.Text = "Hybrid Mode Selected";
+            camera.SetMode(new VideoMode());
+            modeLabel.Text = "Video Mode Selected";
         }
 
         private void timerMode_Click(object sender, EventArgs e)
@@ -49,12 +49,35 @@ namespace Camera_Simulator
 
         private void takeShot_Click(object sender, EventArgs e)
         {
+            if (!(camera.CurrentMode is AutoMode || camera.CurrentMode is PortraitMode ||
+                  camera.CurrentMode is StandardMode || camera.CurrentMode is TimerMode))
+            {
+                MessageBox.Show("Please select an Auto, Portrait, Standard or Timer modes before taking a shot.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string modeDescription = modeLabel.Text;
             mainScreen.Clear();
             Image photo = camera.PressButton(mainScreen, modeDescription);
             DisplayPhoto(photo);
-            galleryImages.Add(photo); // Add the taken photo to the galleryImages list
+            galleryImages.Add(photo); // Add taken photo to the galleryImages list
         }
+
+
+        private void videoRecording_Click(object sender, EventArgs e)
+        {
+            if (!(camera.CurrentMode is VideoMode))
+            {
+                MessageBox.Show("Please select Video Mode before recording a video.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            string videoFilePath = "C:\\Users\\Toets 1\\Documents\\Design-Patterns\\Camera Simulator\\Camera Simulator\\Photos\\Hybrid.mp4"; // Replace this with the actual video file path
+
+            VideoPlayerForm videoPlayerForm = new VideoPlayerForm();
+            videoPlayerForm.PlayVideo(videoFilePath);
+            videoPlayerForm.Show();
+        }
+
 
         private void DisplayPhoto(Image photo)
         {
@@ -72,6 +95,11 @@ namespace Camera_Simulator
         {
             GalleryForm galleryScreen = new GalleryForm(galleryImages);
             galleryScreen.Show();
+        }
+
+        private void offButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

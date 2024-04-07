@@ -49,15 +49,15 @@
             // pictureBox
             // 
             pictureBox.BackColor = Color.White;
-            pictureBox.Location = new Point(148, 102);
+            pictureBox.Location = new Point(71, 90);
             pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(621, 277);
+            pictureBox.Size = new Size(824, 341);
             pictureBox.TabIndex = 1;
             pictureBox.TabStop = false;
             // 
             // nextPhoto
             // 
-            nextPhoto.Location = new Point(657, 400);
+            nextPhoto.Location = new Point(767, 463);
             nextPhoto.Name = "nextPhoto";
             nextPhoto.Size = new Size(112, 34);
             nextPhoto.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // previousPhoto
             // 
-            previousPhoto.Location = new Point(148, 400);
+            previousPhoto.Location = new Point(55, 463);
             previousPhoto.Name = "previousPhoto";
             previousPhoto.Size = new Size(141, 34);
             previousPhoto.TabIndex = 3;

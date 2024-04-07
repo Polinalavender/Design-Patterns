@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Camera_Simulator
 {
-    public class StandardMode : ShotingMode
+    public class StandardMode : ShootingMode
     {
         public string getImageSize()
         {

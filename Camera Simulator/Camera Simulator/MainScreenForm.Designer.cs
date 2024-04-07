@@ -33,10 +33,9 @@
             takeShot = new Button();
             autoMode = new Button();
             portraitMode = new Button();
-            hydridMode = new Button();
             standardMode = new Button();
             modeInfo = new Label();
-            button7 = new Button();
+            offButton = new Button();
             standard = new Button();
             timerMode = new Button();
             pictureBox1 = new PictureBox();
@@ -44,6 +43,8 @@
             label2 = new Label();
             standardButton = new Button();
             galleryButton = new Button();
+            videoRecording = new Button();
+            videoMode = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -97,16 +98,6 @@
             portraitMode.UseVisualStyleBackColor = true;
             portraitMode.Click += portraitMode_Click;
             // 
-            // hydridMode
-            // 
-            hydridMode.Location = new Point(403, 374);
-            hydridMode.Name = "hydridMode";
-            hydridMode.Size = new Size(137, 34);
-            hydridMode.TabIndex = 5;
-            hydridMode.Text = "Hydrid Mode";
-            hydridMode.UseVisualStyleBackColor = true;
-            hydridMode.Click += hydridMode_Click;
-            // 
             // standardMode
             // 
             standardMode.Location = new Point(0, 0);
@@ -121,15 +112,16 @@
             modeInfo.Size = new Size(100, 23);
             modeInfo.TabIndex = 10;
             // 
-            // button7
+            // offButton
             // 
-            button7.Font = new Font("Calibri", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.Location = new Point(738, 70);
-            button7.Name = "button7";
-            button7.Size = new Size(90, 34);
-            button7.TabIndex = 9;
-            button7.Text = "On/Off";
-            button7.UseVisualStyleBackColor = true;
+            offButton.Font = new Font("Calibri", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            offButton.Location = new Point(738, 70);
+            offButton.Name = "offButton";
+            offButton.Size = new Size(90, 34);
+            offButton.TabIndex = 9;
+            offButton.Text = "On/Off";
+            offButton.UseVisualStyleBackColor = true;
+            offButton.Click += offButton_Click;
             // 
             // standard
             // 
@@ -194,12 +186,36 @@
             galleryButton.UseVisualStyleBackColor = true;
             galleryButton.Click += galleryButton_Click;
             // 
+            // videoRecording
+            // 
+            videoRecording.BackColor = Color.IndianRed;
+            videoRecording.Font = new Font("Calibri", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            videoRecording.Location = new Point(515, 122);
+            videoRecording.Name = "videoRecording";
+            videoRecording.Size = new Size(173, 34);
+            videoRecording.TabIndex = 20;
+            videoRecording.Text = "Video recording";
+            videoRecording.UseVisualStyleBackColor = false;
+            videoRecording.Click += videoRecording_Click;
+            // 
+            // videoMode
+            // 
+            videoMode.Location = new Point(403, 374);
+            videoMode.Name = "videoMode";
+            videoMode.Size = new Size(137, 34);
+            videoMode.TabIndex = 21;
+            videoMode.Text = "Video Mode";
+            videoMode.UseVisualStyleBackColor = true;
+            videoMode.Click += videoMode_Click;
+            // 
             // MainScreenForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(978, 544);
+            Controls.Add(videoMode);
+            Controls.Add(videoRecording);
             Controls.Add(galleryButton);
             Controls.Add(standardButton);
             Controls.Add(label2);
@@ -207,10 +223,9 @@
             Controls.Add(pictureBox1);
             Controls.Add(timerMode);
             Controls.Add(standard);
-            Controls.Add(button7);
+            Controls.Add(offButton);
             Controls.Add(modeInfo);
             Controls.Add(standardMode);
-            Controls.Add(hydridMode);
             Controls.Add(portraitMode);
             Controls.Add(autoMode);
             Controls.Add(takeShot);
@@ -231,10 +246,9 @@
         private Button takeShot;
         private Button autoMode;
         private Button portraitMode;
-        private Button hydridMode;
         private Button standardMode;
         private Label modeInfo;
-        private Button button7;
+        private Button offButton;
         private Button standard;
         private Button timerMode;
         private PictureBox pictureBox1;
@@ -242,5 +256,7 @@
         private Label label2;
         private Button standardButton;
         private Button galleryButton;
+        private Button videoRecording;
+        private Button videoMode;
     }
 }

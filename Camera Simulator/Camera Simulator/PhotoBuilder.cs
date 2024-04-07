@@ -9,7 +9,7 @@ namespace Camera_Simulator
 
     public interface PhotoBuilder
     {
-        void BuildImageSize(ShotingMode mode);
+        void BuildImageSize(ShootingMode mode);
         void BuildImage(string photoFilePath);
         Photo GetPhoto();
     }

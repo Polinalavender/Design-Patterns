@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Camera_Simulator
 {
-    public interface ShotingMode
+    public interface ShootingMode
     {
         string getImageSize();
         void takePhoto(RichTextBox richTextBox);

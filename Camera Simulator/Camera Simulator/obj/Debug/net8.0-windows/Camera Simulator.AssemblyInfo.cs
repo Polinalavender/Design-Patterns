@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Camera Simulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25c7b2606cefc47819e3edcf298ea0ef0e9af252")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44343d95c0aa2059b99c952c488767d432b849f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Camera Simulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Camera Simulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

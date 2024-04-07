@@ -9,64 +9,64 @@ namespace Camera_Simulator
     {
         private List<Image> images;
         private int currentIndex;
-        private GaleryTaker galleryTaker;
-        private MainScreenForm mainScreenForm; 
+        private GaleryTake galleryTake;
+        private MainScreenForm mainScreenForm;
 
-        // Inside GalleryForm class
         public GalleryForm(List<Image> images, MainScreenForm mainScreenForm = null)
         {
             InitializeComponent();
-            this.images = images;
-            this.mainScreenForm = mainScreenForm; // Store reference to MainScreenForm
+
+            this.images = images ?? new List<Image>(); // Ensure images list is not null
+            this.mainScreenForm = mainScreenForm;
             currentIndex = 0;
-            galleryTaker = new GaleryTaker();
-            galleryTaker.AddMemento(new GalleryMemento(images));
+            galleryTake = new GaleryTake();
+            galleryTake.AddMomento(new GalleryMemento(images));
+
             DisplayCurrentImage();
         }
 
-
         private void DisplayCurrentImage()
         {
-            // Clear existing image
             pictureBox.Image = null;
 
-            if (images != null && images.Count > 0 && currentIndex >= 0 && currentIndex < images.Count)
+            if (images.Count > 0 && currentIndex >= 0 && currentIndex < images.Count)
             {
-                // Display the current image
-                pictureBox.Image = images[currentIndex];
+                Image currentImage = images[currentIndex];
+
+                // Set PictureBox properties for image display
+                pictureBox.SizeMode = PictureBoxSizeMode.Zoom; // Ensure image fits within PictureBox without stretching
+
+                // Optionally, set a fixed size for the PictureBox
+                pictureBox.Size = new Size(400, 300); // Adjust to your desired size
+
+                // Display the image
+                pictureBox.Image = currentImage;
+            }
+        }
+
+        private void NavigateTo(int index)
+        {
+            if (index >= 0 && index < images.Count)
+            {
+                galleryTake.AddMomento(new GalleryMemento(images));
+                currentIndex = index;
+                DisplayCurrentImage();
             }
         }
 
         private void nextPhoto_Click(object sender, EventArgs e)
         {
-            if (currentIndex < images.Count - 1)
-            {
-                galleryTaker.AddMemento(new GalleryMemento(images));
-                currentIndex++;
-                DisplayCurrentImage();
-            }
+            NavigateTo(currentIndex + 1);
         }
 
         private void previousPhoto_Click(object sender, EventArgs e)
         {
-
-            if (currentIndex > 0)
-            {
-                galleryTaker.AddMemento(new GalleryMemento(images));
-                currentIndex--;
-                DisplayCurrentImage();
-            }
+            NavigateTo(currentIndex - 1);
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            // Check if the mainScreenForm reference is not null
-            if (mainScreenForm != null)
-            {
-                // Show the already opened mainScreenForm
-                mainScreenForm.Show();
-            }
-            // Close the current GalleryForm
+            mainScreenForm?.Show();
             this.Close();
         }
     }
