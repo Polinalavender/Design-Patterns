@@ -44,7 +44,7 @@ The gallery function is available for the camera simulator. User can see all pho
 - PhotoDirector class is responsible for coordinating the construction process. It takes a PhotoBuilder as a parameter and calls its methods to construct the Photo.
 
 
-3. **Momento:**
+3. **Memento:**
 
 - The GalleryMemento and GalleryTake classes demonstrate the Memento design pattern, which is used to capture and restore the state of an object.
 - The GalleryMemento class is responsible for storing the state of the gallery images. It encapsulates a list of Image objects.
