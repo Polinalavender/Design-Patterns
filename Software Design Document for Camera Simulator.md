@@ -35,7 +35,7 @@ The Camera Simulator follows a layered architecture:
 
 - `ConcretePhotobuilder`:  Built photos based on certain structure 
 
-- `GalleryMomento` and `GalleryTake`:   Makes the gallery of the photos 
+- `GalleryMemento` and `GalleryTake`:   Makes the gallery of the photos 
 
   
 
