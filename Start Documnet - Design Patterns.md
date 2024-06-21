@@ -18,7 +18,7 @@ Hybrid Mode: Combines features of different modes for shooting videos in HD form
 Timer Mode: Enables users to set a 5 seconds timer for delayed photo capture, has the same image size as Auto mode. 
 
 The camera interface includes a circle button that users can press to switch between shooting modes and timer (Timermode). Each mode is visually represented on the UI for easy identification.
-The gallery function is available for the camera simulator. User can see all photos that were taken. This function based on Momento design pattern. To open the gallery, user needs to click button "Gallery", to see all photos there are 2 buttons "Next photo" and "Preious photo".
+The gallery function is available for the camera simulator. User can see all photos that were taken. This function based on Memento design pattern. To open the gallery, user needs to click button "Gallery", to see all photos there are 2 buttons "Next photo" and "Preious photo".
 
 
 - User can press the button to switch between modes
@@ -30,7 +30,7 @@ The gallery function is available for the camera simulator. User can see all pho
 
 ##### **Design Patterns:**
 
-1. **State Method:** (for creating instances of different shooting modes)
+1. **State:** (for creating instances of different shooting modes)
 
 - An interface `ShootingMode`, that declares methods corresponding to different actions in each shooting mode (takePhoto, getImageSize).
 - Create classes for each shooting mode  `AutoMode`, `PortraitMode`, `StandardMode`, `HydridMode`, `TimerMode`. 
